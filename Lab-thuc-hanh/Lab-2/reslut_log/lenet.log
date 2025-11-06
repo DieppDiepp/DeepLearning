@@ -1,0 +1,52 @@
+--- ĐÁNH GIÁ TỔNG THỂ (MACRO AVG) ---
+Overall Accuracy: 0.9867
+Macro Precision:  0.9869
+Macro Recall:     0.9865
+Macro F1-Score:   0.9866
+
+--- ĐÁNH GIÁ CHI TIẾT TỪNG CHỮ SỐ (0-9) ---
+              precision    recall  f1-score   support
+
+           0     0.9770    0.9949    0.9858       980
+           1     0.9835    0.9991    0.9913      1135
+           2     0.9874    0.9893    0.9884      1032
+           3     0.9833    0.9891    0.9862      1010
+           4     0.9858    0.9929    0.9893       982
+           5     0.9899    0.9843    0.9871       892
+           6     0.9968    0.9791    0.9879       958
+           7     0.9844    0.9844    0.9844      1028
+           8     0.9968    0.9713    0.9839       974
+           9     0.9841    0.9802    0.9821      1009
+
+    accuracy                         0.9867     10000
+   macro avg     0.9869    0.9865    0.9866     10000
+weighted avg     0.9868    0.9867    0.9867     10000
+
+--- Bắt đầu huấn luyện ---
+Epoch 1/10
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1762220009.713597      58 service.cc:148] XLA service 0x79bcac005030 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1762220009.714181      58 service.cc:156]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+I0000 00:00:1762220010.015402      58 cuda_dnn.cc:529] Loaded cuDNN version 90300
+ 61/422 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.3529 - loss: 2.1538
+I0000 00:00:1762220012.219653      58 device_compiler.h:188] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+422/422 ━━━━━━━━━━━━━━━━━━━━ 8s 9ms/step - accuracy: 0.6855 - loss: 1.0816 - val_accuracy: 0.9327 - val_loss: 0.2340
+Epoch 2/10
+422/422 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9351 - loss: 0.2102 - val_accuracy: 0.9593 - val_loss: 0.1347
+Epoch 3/10
+422/422 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9613 - loss: 0.1292 - val_accuracy: 0.9748 - val_loss: 0.0934
+Epoch 4/10
+422/422 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9719 - loss: 0.0913 - val_accuracy: 0.9803 - val_loss: 0.0709
+Epoch 5/10
+422/422 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9781 - loss: 0.0725 - val_accuracy: 0.9823 - val_loss: 0.0627
+Epoch 6/10
+422/422 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9807 - loss: 0.0664 - val_accuracy: 0.9830 - val_loss: 0.0567
+Epoch 7/10
+422/422 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9828 - loss: 0.0548 - val_accuracy: 0.9830 - val_loss: 0.0548
+Epoch 8/10
+422/422 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9851 - loss: 0.0481 - val_accuracy: 0.9847 - val_loss: 0.0540
+Epoch 9/10
+422/422 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9869 - loss: 0.0416 - val_accuracy: 0.9858 - val_loss: 0.0503
+Epoch 10/10
+422/422 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9886 - loss: 0.0395 - val_accuracy: 0.9885 - val_loss: 0.0463
+--- Hoàn thành huấn luyện trong 21.12 giây ---

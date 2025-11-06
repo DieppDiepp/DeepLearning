@@ -1,0 +1,89 @@
+209/209 ━━━━━━━━━━━━━━━━━━━━ 35s 141ms/step - accuracy: 0.4230 - loss: 1.9278
+
+Test Loss: 1.9371
+Test Accuracy: 0.4154
+
+                  precision    recall  f1-score   support
+
+        banh-can       0.31      0.26      0.28       241
+        banh-hoi       0.46      0.63      0.53       607
+    banh-mi-chao       0.47      0.42      0.45       289
+        banh-tet       0.51      0.45      0.48       364
+ banh-trang-tron       0.42      0.16      0.23       309
+          banh-u       0.28      0.31      0.29       176
+        banh-uot       0.43      0.23      0.30       560
+       bap-nuong       0.13      0.08      0.10       143
+          bo-kho       0.54      0.45      0.49       338
+       bo-la-lot       0.44      0.85      0.58       458
+       bot-chien       0.29      0.32      0.31       276
+           ca-ri       0.30      0.14      0.19       171
+    canh-kho-qua       0.34      0.78      0.48       290
+   canh-khoai-mo       0.85      0.75      0.79       197
+        ga-nuong       0.40      0.34      0.37       372
+          goi-ga       0.39      0.41      0.40       290
+          ha-cao       0.37      0.33      0.35       480
+hoanh-thanh-nuoc       0.29      0.15      0.20       240
+         pha-lau       0.46      0.30      0.36       352
+          tau-hu       0.37      0.52      0.43       203
+  thit-kho-trung       0.40      0.38      0.39       325
+
+        accuracy                           0.42      6681
+       macro avg       0.40      0.39      0.38      6681
+    weighted avg       0.41      0.42      0.40      6681
+
+
+Epoch 1/25
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1762338534.733404      59 service.cc:148] XLA service 0x7c7ca42614b0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1762338534.734092      59 service.cc:156]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+I0000 00:00:1762338538.541511      59 cuda_dnn.cc:529] Loaded cuDNN version 90300
+I0000 00:00:1762338565.365644      59 device_compiler.h:188] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+126/126 ━━━━━━━━━━━━━━━━━━━━ 169s 904ms/step - accuracy: 0.0832 - loss: 2.9997 - val_accuracy: 0.0842 - val_loss: 2.9592 - learning_rate: 1.0000e-04
+Epoch 2/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 30s 234ms/step - accuracy: 0.1002 - loss: 2.9347 - val_accuracy: 0.1066 - val_loss: 2.8472 - learning_rate: 1.0000e-04
+Epoch 3/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 30s 236ms/step - accuracy: 0.1151 - loss: 2.8267 - val_accuracy: 0.1295 - val_loss: 2.7397 - learning_rate: 1.0000e-04
+Epoch 4/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 28s 226ms/step - accuracy: 0.1474 - loss: 2.7083 - val_accuracy: 0.1599 - val_loss: 2.6510 - learning_rate: 1.0000e-04
+Epoch 5/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 233ms/step - accuracy: 0.1783 - loss: 2.6268 - val_accuracy: 0.1638 - val_loss: 2.6051 - learning_rate: 1.0000e-04
+Epoch 6/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 234ms/step - accuracy: 0.2077 - loss: 2.5449 - val_accuracy: 0.2052 - val_loss: 2.5962 - learning_rate: 1.0000e-04
+Epoch 7/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 229ms/step - accuracy: 0.2427 - loss: 2.4171 - val_accuracy: 0.2301 - val_loss: 2.4969 - learning_rate: 1.0000e-04
+Epoch 8/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 231ms/step - accuracy: 0.2670 - loss: 2.3321 - val_accuracy: 0.2410 - val_loss: 2.4540 - learning_rate: 1.0000e-04
+Epoch 9/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 233ms/step - accuracy: 0.2864 - loss: 2.2814 - val_accuracy: 0.2674 - val_loss: 2.3654 - learning_rate: 1.0000e-04
+Epoch 10/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 232ms/step - accuracy: 0.2992 - loss: 2.2393 - val_accuracy: 0.2933 - val_loss: 2.3206 - learning_rate: 1.0000e-04
+Epoch 11/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 231ms/step - accuracy: 0.3277 - loss: 2.1442 - val_accuracy: 0.2988 - val_loss: 2.2574 - learning_rate: 1.0000e-04
+Epoch 12/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 232ms/step - accuracy: 0.3515 - loss: 2.0888 - val_accuracy: 0.3192 - val_loss: 2.1737 - learning_rate: 1.0000e-04
+Epoch 13/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 232ms/step - accuracy: 0.3609 - loss: 2.0352 - val_accuracy: 0.3237 - val_loss: 2.1528 - learning_rate: 1.0000e-04
+Epoch 14/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 233ms/step - accuracy: 0.3911 - loss: 1.9690 - val_accuracy: 0.3571 - val_loss: 2.0344 - learning_rate: 1.0000e-04
+Epoch 15/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 233ms/step - accuracy: 0.4063 - loss: 1.9017 - val_accuracy: 0.3755 - val_loss: 1.9561 - learning_rate: 1.0000e-04
+Epoch 16/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 229ms/step - accuracy: 0.4144 - loss: 1.8721 - val_accuracy: 0.3725 - val_loss: 1.9489 - learning_rate: 1.0000e-04
+Epoch 17/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 233ms/step - accuracy: 0.4293 - loss: 1.8293 - val_accuracy: 0.3875 - val_loss: 1.9176 - learning_rate: 1.0000e-04
+Epoch 18/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 233ms/step - accuracy: 0.4504 - loss: 1.7843 - val_accuracy: 0.4124 - val_loss: 1.8215 - learning_rate: 1.0000e-04
+Epoch 19/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 233ms/step - accuracy: 0.4560 - loss: 1.7407 - val_accuracy: 0.4188 - val_loss: 1.8197 - learning_rate: 1.0000e-04
+Epoch 20/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 233ms/step - accuracy: 0.4774 - loss: 1.6792 - val_accuracy: 0.4223 - val_loss: 1.8550 - learning_rate: 1.0000e-04
+Epoch 21/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 228ms/step - accuracy: 0.4829 - loss: 1.6282 - val_accuracy: 0.4213 - val_loss: 1.8467 - learning_rate: 1.0000e-04
+Epoch 22/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 232ms/step - accuracy: 0.4998 - loss: 1.5770 - val_accuracy: 0.4318 - val_loss: 1.7904 - learning_rate: 1.0000e-04
+Epoch 23/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 231ms/step - accuracy: 0.5184 - loss: 1.5303 - val_accuracy: 0.4532 - val_loss: 1.8026 - learning_rate: 1.0000e-04
+Epoch 24/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 233ms/step - accuracy: 0.5318 - loss: 1.4842 - val_accuracy: 0.4547 - val_loss: 1.7743 - learning_rate: 1.0000e-04
+Epoch 25/25
+126/126 ━━━━━━━━━━━━━━━━━━━━ 29s 234ms/step - accuracy: 0.5439 - loss: 1.4439 - val_accuracy: 0.4592 - val_loss: 1.7564 - learning_rate: 1.0000e-04
